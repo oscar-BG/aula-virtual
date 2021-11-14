@@ -6,9 +6,12 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/0f48d8c00d.js"></script>
     <link rel="stylesheet" href="../css/style.css">
-    <title>Aula IEBO</title>
+    <title>Aula IEBP</title>
 </head>
 <body>
+    <!-- 
+        ###         Inicio de barra de navegacion   ####
+    -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <h4>IEBO</h4>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
@@ -48,6 +51,67 @@
         </ul>
         </div>
     </nav>
+    <!-- Fin de la barra de nevegacion -->
+
+    <!-- 
+        ### Contenido principal de la pagina  #####
+                crear nuevos usuarios
+     -->
+     <!--Boton crear usuario-->
+    <div class="container-fluid mt-5">
+       <div class="row  ">
+           <div class="col-sm-12">
+               <button class="btn btn-primary" data-toggle="modal" data-target="#CrearUsuario">Crear Nuevo usuario</button>
+           </div>
+       </div>
+    </div>
+    <!-- Abrir ventana con formulario -->
+    <div class="modal fade" id="CrearUsuario">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form  method="post">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <h2>Tipo de usuario</h2>
+                            <select class="form-control input-lg" name="rol" required="" id="">
+                                <option value="">Seleccionar...</option>
+                                <option value="Administrador">Administrador</option>
+                                <option value="Profesor">Profesor</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <h2>Nombre</h2>
+                            <input class="form-control input-lg" type="text" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <h2>apellido materno</h2>
+                            <input class="form-control input-lg" type="text" name="apellidop" required>
+                        </div>
+                        <div class="form-group">
+                            <h2>Apellido materno</h2>
+                            <input class="form-control input-lg" type="text" name="apellidom" required>
+                        </div>
+                        <div class="form-group">
+                            <h2>usuario</h2>
+                            <input class="form-control input-lg" type="text" name="usuario" required>
+                        </div>
+                        <div class="form-group">
+                            <h2>Contraseña</h2>
+                            <input class="form-control input-lg" type="password" name="clave1" required>
+                        </div>
+                        <div class="form-group">
+                            <h2>Confirme contraseña</h2>
+                            <input class="form-control input-lg" type="password" name="clave2" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Crear</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
