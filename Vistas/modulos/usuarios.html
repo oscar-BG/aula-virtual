@@ -98,7 +98,7 @@
                            <td>Clave</td>
                            <td>Rol</td>
                            <td>
-                               <button class="btn btn-success"><i class="bi bi-pencil-square"></i></button>
+                               <button class="btn btn-success" data-toggle="modal" data-target="#EditarUsuario"><i class="bi bi-pencil-square"></i></button>
                                <button class="btn btn-danger"><i class="bi bi-trash"></i></button>
                             </td>
                        </tr>
@@ -109,6 +109,9 @@
        </div>
     </div>
     <!-- Abrir ventana con formulario -->
+    <!-- 
+        ##### Crear Usuario  #####
+     -->
     <div class="modal fade" id="CrearUsuario">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -149,6 +152,56 @@
                     </div>
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-primary">Crear</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Abiri ventana con formulario -->
+    <!-- 
+        ######## Editar Usuario #####
+     -->
+     <div class="modal fade" id="EditarUsuario">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form  method="post">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <h2>Tipo de usuario</h2>
+                            <select class="form-control input-lg" name="rol" required="" id="">
+                                <option value="">Seleccionar...</option>
+                                <option value="Administrador">Administrador</option>
+                                <option value="Profesor">Profesor</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <h2>Nombre</h2>
+                            <input class="form-control input-lg" type="text" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <h2>apellido materno</h2>
+                            <input class="form-control input-lg" type="text" name="apellidop" required>
+                        </div>
+                        <div class="form-group">
+                            <h2>Apellido materno</h2>
+                            <input class="form-control input-lg" type="text" name="apellidom" required>
+                        </div>
+                        <div class="form-group">
+                            <h2>usuario</h2>
+                            <input class="form-control input-lg" type="text" name="usuario" required>
+                        </div>
+                        <div class="form-group">
+                            <h2>Contraseña</h2>
+                            <input class="form-control input-lg" type="password" name="clave1" required>
+                        </div>
+                        <div class="form-group">
+                            <h2>Confirme contraseña</h2>
+                            <input class="form-control input-lg" type="password" name="clave2" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Actualizar</button>
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
                     </div>
                 </form>
