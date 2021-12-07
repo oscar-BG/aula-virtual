@@ -1,1 +1,39 @@
-.bg-dark{background-color:rgb(55, 197, 55) !important;}
+.bg-dark{background-color: #ff87ab !important;}
+/*Cambiar el color de la letra*/
+.text-white{
+	color:black !important;
+	font-weight: bolder;
+}
+/*tarjeta de login*/
+.tarjeta{
+	padding-top: 100px;
+}
+.barra{
+	background-color: #ef476f;
+	height: 50px;
+}
+.lema{
+	text-align: right;
+	font-weight: bold;
+	font-size: 20px;
+}
+.card-header{
+	background-color: #ffc8dd;
+}
+/*Tablero*/
+.tablero{
+	font-size: 50px;
+	font-weight: bolder;
+}
+/*Editar colores de botones*/
+.btn-primary{
+	background-color: #ea526f;
+	border-color: #ea526f;
+}
+.btn-primary:hover{
+	background-color: #ffa6c1;
+	border-color: #ffa6c1;
+}
+.btn-success{
+	background-color: #00b4d8;
+}
